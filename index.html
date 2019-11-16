@@ -1,0 +1,109 @@
+<html>
+  <head>
+    <meta property="og:image" content="http://www.winn-profile.appspot.com/favicon.png"></meta>
+    <!--bootstrap links-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+
+    <link rel="stylesheet" href="/static/style.css" type="text/css">
+    <link rel="stylesheet" href="/static/media-queries.css" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+    <title>Winnie Lam</title>
+  </head>
+
+  <body>
+    <ul id="change" class="nav justify-content-center"> <!--navigation bar-->
+      <li class="nav-item"><a class="nav-link active" href="/">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="/resume">Résumé</a></li>
+      <li class="nav-item"><a class="nav-link" href="/projects">Projects</a></li>
+      <li class="nav-item"><a class="nav-link" href="/activities">Activities</a></li>
+      <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
+    </ul>
+
+    <div style="position:relative;">
+      <section id="title">
+        <img id="backdrop" src="../static/title.jpg" alt="bg">
+      </section>
+      <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);">
+        <section id="body">
+          <h4 style="margin:0;">Winnie Lam</h4>
+          <p id="position">Computer Science Specialist Student</p>
+        </section>
+      </div>
+    </div>
+
+    <div class="content" style="text-align:center;"> <!--all the gucci content-->
+      <h2>Welcome</h2>
+      <br>
+      <p>An aspiring computer science student with a passion for aesthetics,
+        creation and computers.</p>
+      <p>Contact information in the footer and Contact tab.</p>
+      <br>
+    </div>
+
+    <br></br>
+
+    <div id="about">
+      <img id="me" src="../static/win1.jpg" class="img-thumbnail img-fluid float-left" alt="Winnie"
+        onContextMenu="return false;">
+
+      <div id="info" style="padding:2%; margin:10px;">
+        <h2 id="hi" style="font-size:50px;">Hi, it's Winnie!</h2>
+        <p>I am currently attending <b>University of Toronto</b>, program
+          for <i>Specialist Computer Science - Software Engineering Stream</i>. My interest
+          in computer science started in grade 10. Now, I have 4 years of
+          experience and knowledge of multiple programming languages under my belt. </p>
+        <p>Currently, I am a teaching assistant for a first year computer science course,
+          a student ambassador campus tour guide, and a WiCSM mentor.</p>
+        <p>I have also volunteered for various STEM related roles for students
+          interested in pursuing the field in their future.</p>
+        <p>Incoming Developer at RBC Royal Bank for Winter 2020.</p>
+
+        <br><br>
+
+      </div>
+    </div>
+
+    <footer>
+      <hr>
+      <h2 style="font-size:20px;text-shadow:0px 0px;">Winnie Lam</h2>
+      <p>winnieee.lam@mail.utoronto.ca</p>
+      <a href="https://www.linkedin.com/in/winnllam/"><i class="fab fa-linkedin icons"></i></a>
+      <a href="https://github.com/winnllam"><i class="fab fa-github icons"></i></a>
+      <a href="https://www.instagram.com/winnllam/"><i class="fab fa-instagram icons"></i></a>
+      <br><br>
+      <p><i>"You only live once but if you do it right, once is enough."</i> - <b>Mae West</b></p>
+      <p style="font-size:12px; margin-bottom:0;"><i> © 2018 by Winnie Lam </i>; Created with HTML and CSS</p>
+    </footer>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script>
+      /* change colour scheme */
+      $( document ).ready(function() {
+        var listOfClasses = ["scheme-1","scheme-2","scheme-3","scheme-4","scheme-5"];
+        var ranNum = Math.floor(Math.random() * listOfClasses.length);
+        $("body").addClass(listOfClasses[ranNum]);
+      });
+
+      /* navigation bar colour change */
+      var top1 = $('#title').offset().top;
+      var top2 = $('#body').offset().top;
+
+      $(document).scroll(function() {
+        var scrollPos = $(document).scrollTop();
+        if (scrollPos >= top1 && scrollPos < top2) {
+          $('#change').css('background-color', '');
+        } else if (scrollPos >= top2) {
+          $('#change').css('background-color', '#333');
+        }
+      });
+    </script>
+  </body>
+</html>
