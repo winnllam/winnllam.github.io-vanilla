@@ -1,0 +1,345 @@
+<html>
+  <head>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="/static/media-queries.css" type="text/css">
+
+    <title>Winnie Lam</title>
+
+    <style>
+      p {font-size: 17px;}
+      .nav{ background-color: #333;}
+    </style>
+
+    <script>
+      $(document).ready(function(){
+        // Add minus icon for collapse element which is open by default
+        $(".collapse.show").each(function(){
+          $(this).prev(".card-header").find(".fa").addClass("fa-minus").removeClass("fa-plus");
+        });
+        // Toggle plus minus icon on show hide of collapse element
+        $(".collapse").on('show.bs.collapse', function(){
+          $(this).prev(".card-header").find(".fa").removeClass("fa-plus").addClass("fa-minus");
+        }).on('hide.bs.collapse', function(){
+          $(this).prev(".card-header").find(".fa").removeClass("fa-minus").addClass("fa-plus");
+        });
+      });
+    </script>
+  </head>
+
+  <body>
+    <ul class="nav justify-content-center"> <!--navigation bar-->
+      <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="resume.html">Résumé</a></li>
+      <li class="nav-item"><a class="nav-link active" href="project.html">Projects</a></li>
+      <li class="nav-item"><a class="nav-link" href="activities.html">Activities</a></li>
+      <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+    </ul>
+    <div style="margin-top:50px;"></div>
+    <h1>Projects</h1>
+
+    <div class="projbox"> <!-- accordion dropdowns-->
+      <div class="accordion" id="acc">
+
+        <!--
+        <div class="card">
+          <div class="card-header">
+            <h2>
+              <button type="button" class="btn btn-link collapsed" data-toggle="collapse"
+              data-target="#collapse#"><i class="fa fa-plus"></i>NAME/DETAIL</button>
+            </h2>
+          </div>
+          <div id="collapse#" class="collapse" data-parent="#acc">
+            <div class="card-body">
+              <div>
+                <img class="pimages" src="../static/projects/.png" alt="">
+              </div>
+              <h2>NAME</h2>
+              <h3><b>Status: </b>Active (Dec 2018 - Present)</h3>
+              <p>deets</p>
+
+              <p><i>Languages:</i> lang</p>
+              <p><i>Software/Tools:</i></p>
+              <p><i>Resources:</i> <a href=""></a></p>
+              <button class="linkproj" onclick="window.location.href=''">Link to Project</button>
+            </div>
+          </div>
+        </div>
+        -->
+
+        <div class="card">
+          <div class="card-header">
+            <h2>
+              <button type="button" class="btn btn-link collapsed" data-toggle="collapse"
+              data-target="#collapseSeven"><i class="fa fa-plus"></i>Android Application</button>
+            </h2>
+          </div>
+          <div id="collapseSeven" class="collapse" data-parent="#acc">
+            <div class="card-body">
+              <div>
+                <img class="pimages" src="../static/projects/.png" alt="">
+              </div>
+              <h2>NAME</h2>
+              <h3><b>Status: </b>Active (Nov 2019 - Present)</h3>
+              <p>In the software design course (CSCB07), the final project was to create an
+                android application; a shopping ___ . In teams of 4, we followed an agile __</p>
+              <p>Scrum master, scrum style</p>
+              <p>In teams of 4, we created a __</p>
+              <p>In our working process, we used Trello to</p>
+              <p>Android Studio, Trello</p>
+
+              <p><i>Languages:</i> Java, SQLite</p>
+              <p><i>Software/Tools:</i> Android Studio, IntelliJ IDEA, Eclipse IDE, Trello</p>
+              <p><i>Resources:</i> <a href=""></a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <h2>
+              <button type="button" class="btn btn-link collapsed" data-toggle="collapse"
+              data-target="#collapseSix"><i class="fa fa-plus"></i>Evernote Replica</button>
+            </h2>
+          </div>
+          <div id="collapseSix" class="collapse" data-parent="#acc">
+            <div class="card-body">
+              <div>
+                <img class="pimages" src="../static/projects/fc1.png" alt="filecabinet1">
+                <img class="pimages" src="../static/projects/fc2.png" alt="filecabinet2">
+                <img class="pimages" src="../static/projects/fc3.png" alt="filecabinet3">
+                <img class="pimages" src="../static/projects/fc4.png" alt="filecabinet4">
+                <img class="pimages" src="../static/projects/fc5.png" alt="filecabinet5">
+              </div>
+              <h2>FileCabinet</h2>
+              <h3><b>Status: </b>Active (Sept 2019)</h3>
+              <p>Hosted on Heroku, I created a minimalist-themed web application
+                that stores documents and notes, similar to Evernote. Using Rails web
+                framework and HAML syntax to embed Ruby code, I was able to implement
+                the main function of file storage and manipulation.</p>
+              <p>Using gems to add functionality, I was also able to implement user
+                logins (using Devise) and adding files (Simple Form).</p>
+              <p>Signing up and logging in will enable users to then create their
+                own notes and also be able to look at all the notes they have created.
+                There are editing and delete options on the notes in the case they
+                wish to make changes. There is no way to access notes that others
+                users have created.</p>
+              <p>Further functionality that may be added in the future:
+                <br> • document ordering (date, title, manual)
+                <br> • document download/export
+                <br> • easier text styling</p>
+
+              <p><i>Languages:</i> Ruby on Rails, Ruby, SASS, HAML, HTML, CSS</p>
+              <p><i>Software/Tools:</i> Atom Text Editor, Google Chrome, Heroku, Git, Gems</p>
+              <p><i>Resources:</i>
+                <a href="https://www.udemy.com/course/8-beautiful-ruby-on-rails-apps-in-30-days/">Udemy</a>,
+                <a href="https://www.heroku.com">Heroku</a>,
+                <a href="https://rubygems.org/gems/haml/versions/4.0.7">Haml</a>,
+                <a href="https://rubygems.org/gems/devise/versions/4.2.0">Devise</a>,
+                <a href="https://rubygems.org/gems/simple_form/versions/3.5.0">Simple Form</a>
+              </p>
+              <button class="linkproj" onclick="window.location.href='https://filing-cab.herokuapp.com'">Link to Project</button>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="card">
+          <div class="card-header">
+            <h2>
+              <button type="button" class="btn btn-link" data-toggle="collapse"
+              data-target="#collapseOne"><i class="fa fa-plus"></i>Web Page Designs</button>
+            </h2>
+          </div>
+          <div id="collapseOne" class="collapse" data-parent="#acc">
+            <div class="card-body">
+              <div>
+                <img class="pimages" src="../static/projects/jp1.png" alt="just-peachy1">
+                <img class="pimages" src="../static/projects/jp2.png" alt="just-peachy2">
+              </div>
+
+              <h2>Just-Peachy</h2>
+              <h3><b>Status: </b>Active (Dec 2018 - Present)</h3>
+              <p>A website as a gallery for different page designs with multi-purposes.</p>
+              <p>Displays web design and development skills to be able to attain the
+                right aesthetics and correct function of a page's theme.</p>
+              <p>Designs and selected images personally created.</p>
+
+              <p><i>Languages:</i> HTML, CSS, Python, JavaScript</p>
+              <p><i>Software/Tools:</i> Atom Text Editor, Google Chrome, Google App Engine, Git</p>
+              <p><i>Resources:</i>
+                <a href="https://www.w3schools.com">w3schools</a>,
+                <a href="https://developer.mozilla.org/en-US/">MDN Web Docs</a></p>
+              <button class="linkproj" onclick="window.location.href='https://just-peachy.appspot.com'">Link to Project</button>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="card">
+          <div class="card-header">
+            <h2>
+              <button type="button" class="btn btn-link collapsed" data-toggle="collapse"
+              data-target="#collapseTwo"><i class="fa fa-plus"></i>Website Creation</button>
+            </h2>
+          </div>
+          <div id="collapseTwo" class="collapse" data-parent="#acc">
+            <div class="card-body">
+              <div>
+                <img class="pimages" src="../static/projects/wireframe.png" alt="wireframe">
+              </div>
+
+              <h2>Winn-Profile</h2>
+              <h3><b>Status: </b>Active (Sept 2018 - Present)</h3>
+              <p>You're looking at it right now! This website was made from stratch
+                by yours truly, to display all the things I have created or accomplished.
+                This is a chance to show my competence in simple web creation and
+                development. </p>
+
+              <p><i>Languages:</i> HTML, CSS, Python, JavaScript</p>
+              <p><i>Software/Tools:</i> Atom Text Editor, Google Chrome, Google App Engine, Git</p>
+              <p><i>Resources:</i>
+                <a href="https://github.com/dwyl/learn-to-send-email-via-google-script-html-no-server">
+                  Send email with no server</a>,
+                <a href="https://www.w3schools.com"> w3schools</a>,
+                <a href="https://developer.mozilla.org/en-US/">MDN Web Docs</a>,
+                <a href="https://getbootstrap.com/">Bootstrap</a></p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="card">
+          <div class="card-header">
+            <h2>
+              <button type="button" class="btn btn-link collapsed" data-toggle="collapse"
+              data-target="#collapseThree"><i class="fa fa-plus"></i>Student Connecter</button>
+            </h2>
+          </div>
+          <div id="collapseThree" class="collapse" data-parent="#acc">
+            <div class="card-body">
+              <div class="projimg">
+                <img class="pimages" src="../static/projects/qp1.png" alt="scrnshot 1">
+                <img class="pimages" src="../static/projects/qp2.png" alt="scrnshot 2">
+                <img class="pimages" src="../static/projects/qp3.png" alt="scrnshot 3">
+              </div>
+              <h2>Quad-Plus</h2>
+              <h3><b>Status: </b>Inactive (July 2018)</h3>
+              <p>Quad-Plus was created as a final project during my time with
+                Google's Computer Science Summer Institute (CSSI). Partnered up with
+                two others from the 30 students there, we created a web application
+                that connects high school to university/college. </p>
+              <p>Taking in the users information, a line is drawn on the map,
+                connecting where they went to high school to where they'll be going to
+                university/college. They would also be able to see other users lines
+                on the map. </p>
+              <p>Logging in would enable the user to see lists of other users who
+                went to the same high school and people going to the same
+                university/college. </p>
+              <p>My role in this was to store the user information on the web and
+                retrieve it back out for displays per specific user. This included
+                login information, names of the institutions, and location (latitude
+                and longitude).</p>
+
+              <p><i>Languages:</i> HTML, CSS, Python, JavaScript</p>
+              <p><i>Software/Tools:</i> Atom Text Editor, Google Chrome, Google App Engine, Git</p>
+              <p><i>Resources:</i>
+                <a href="https://developers.google.com/maps/documentation/javascript/tutorial">
+                  Google Maps API</a>,
+                <a href="https://developers.google.com/maps/documentation/javascript/examples/polyline-simple">
+                  Simple Polylines</a></p>
+              <button class="linkproj" onclick="window.location.href='https://quad-plus.appspot.com'">Link to Project</button>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="card">
+          <div class="card-header">
+            <h2>
+              <button type="button" class="btn btn-link collapsed" data-toggle="collapse"
+              data-target="#collapseFour"><i class="fa fa-plus"></i>Airplane Shooter Game</button>
+            </h2>
+          </div>
+          <div id="collapseFour" class="collapse" data-parent="#acc">
+            <div class="card-body">
+              <div>
+                <img class="pimages" src="../static/projects/cs1.png" alt="scrnshot 1">
+                <img class="pimages" src="../static/projects/cs2.png" alt="scrnshot 2">
+              </div>
+              <h2>Copyright Strike</h2>
+              <h3><b>Status: </b>Inactive (April - June 2018)</h3>
+              <p>Copyright Strike was created as a final project in my grade 12
+                computer science course. Partnered up with two other classmates
+                in the class, we created an airplaine shooter game to fit the
+                requirements outlined by the rubric.</p>
+              <p>In this game, the user controls the airplane at the bottom of
+                the screen using the arrow keys, and proceeds to try to shoot
+                down all incoming enemies and bosses. It tracks lives, bombs,
+                current score, and high score throughout the duration of the game.</p>
+              <p>Using polymorphism and inheritance, we were able to create game
+                objects effectively and efficently without repetition of code.</p>
+              <p>My role in this was to create and enchance the graphics, thus
+                improving user experience. This included the scrolling background,
+                graphics of the title screen, movement of objects, and updating
+                the items that need to be kept tracked of as mentioned above.</p>
+              <p>This project resulted in an A grade, worth 30% of the total mark.</p>
+
+              <p><i>Languages:</i> Java</p>
+              <p><i>Software/Tools:</i> NetBeans IDE</p>
+              <p><i>Resources:</i> N/A</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="card">
+          <div class="card-header">
+            <h2>
+              <button type="button" class="btn btn-link collapsed" data-toggle="collapse"
+              data-target="#collapseFive"><i class="fa fa-plus"></i>PC Building</button>
+            </h2>
+          </div>
+          <div id="collapseFive" class="collapse" data-parent="#acc">
+            <div class="card-body">
+              <div>
+                <img class="pimages" src="../static/projects/pc_parts.png" alt="pc parts">
+              </div>
+              <h2>PC Building</h2>
+              <p>(May have some variation to parts)</p>
+              <p>A personally assemble, fully functional and running PC.</p>
+              <p>This little project happened over winter break, and I was debating
+                on buying a Windows Desktop. Someone suggested to just build one; it's
+                cheaper and you'd get the experience.</p>
+
+              <p><i>Languages:</i> N/A</p>
+              <p><i>Software/Tools:</i> N/A</p>
+              <p><i>Resources:</i> Internet and grade 11 computer science</p>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+    <footer>
+      <hr>
+      <h2 style="font-size:20px;text-shadow:0px 0px;">Winnie Lam</h2>
+      <p>winnieee.lam@mail.utoronto.ca</p>
+      <a href="https://www.linkedin.com/in/winnllam/"><i class="fab fa-linkedin icons"></i></a>
+      <a href="https://github.com/winnllam"><i class="fab fa-github icons"></i></a>
+      <a href="https://www.instagram.com/winnllam/"><i class="fab fa-instagram icons"></i></a>
+      <br><br>
+      <p><i>"You only live once but if you do it right, once is enough."</i> - <b>Mae West</b></p>
+      <p style="font-size:12px; margin-bottom:0;"><i> © 2018 by Winnie Lam </i>; Created with HTML and CSS</p>
+    </footer>
+
+  </body>
+</html>

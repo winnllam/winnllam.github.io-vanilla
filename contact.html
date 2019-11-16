@@ -1,0 +1,85 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="contact form example">
+
+    <!--bootstrap links-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" i
+      ntegrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="../static/contact_style.css">
+    <link rel="stylesheet" href="/static/media-queries.css" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+
+    <script data-cfasync="false" type="text/javascript" src="../static/form-submission-handler.js"></script>
+
+    <style>
+      .nav{ background-color: #333;}
+    </style>
+
+    <title>Winnie Lam</title>
+  </head>
+
+  <body>
+    <ul class="nav justify-content-center"> <!--navigation bar-->
+      <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="resume.html">Résumé</a></li>
+      <li class="nav-item"><a class="nav-link" href="project.html">Projects</a></li>
+      <li class="nav-item"><a class="nav-link" href="activities.html">Activities</a></li>
+      <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+    </ul>
+
+    <div style="margin-top:50px;"></div>
+
+     <form class="gform pure-form pure-form-stacked content" method="POST" data-email="example@email.net"
+     action="https://script.google.com/macros/s/AKfycbxUFQrDBMQlGLQrVM7jTtGZAdioPGXqptx3GSC6otYprH9owOg/exec">
+
+     <h1>Inquires? Send a Message!</h1>
+
+     <div class="form-elements">
+       <fieldset class="pure-group">
+         <label for="name">Name: </label>
+         <input id="name" name="name" placeholder="" />
+       </fieldset>
+
+       <fieldset class="pure-group">
+         <label for="message">Message: </label>
+         <textarea id="message" name="message" rows="10" placeholder=""></textarea>
+       </fieldset>
+
+       <fieldset class="pure-group">
+         <label for="email"><em>Your</em> Email Address:</label>
+         <input id="email" name="email" type="email" value="" required placeholder="your.name@email.com"/>
+         <span class="email-invalid" style="display:none"> Must be a valid email address</span>
+       </fieldset>
+
+       <button class="button-success pure-button button-xlarge" id="send">
+         <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
+      </div>
+
+      <div class="thankyou_message" style="display:none;"> <!-- thank you message -->
+        <h2><em>Thanks</em> for contacting us! We will get back to you soon!</h2>
+      </div>
+    </form>
+
+    <br><br><br><br>
+    <footer>
+      <hr>
+      <h2 style="font-size:20px;text-shadow:0px 0px;">Winnie Lam</h2>
+      <p>winnieee.lam@mail.utoronto.ca</p>
+      <a href="https://www.linkedin.com/in/winnllam/"><i class="fab fa-linkedin icons"></i></a>
+      <a href="https://github.com/winnllam"><i class="fab fa-github icons"></i></a>
+      <a href="https://www.instagram.com/winnllam/"><i class="fab fa-instagram icons"></i></a>
+      <br><br>
+      <p><i>"You only live once but if you do it right, once is enough."</i> - <b>Mae West</b></p>
+      <p style="font-size:12px; margin-bottom:0;"><i> © 2018 by Winnie Lam </i>; Created with HTML and CSS</p>
+    </footer>
+
+  </body>
+</html>
