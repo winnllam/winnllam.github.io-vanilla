@@ -1,0 +1,26 @@
+body {
+  margin: 2em;
+}
+
+textarea {
+  width: 500px;
+}
+
+.button-success {
+  color: white;
+  border-radius: 4px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  background: rgb(28, 184, 65); /* this is a green */
+}
+
+.button-xlarge {
+  font-size: 125%;
+}
+
+#send {
+  float: left;
+}
+
+#name, #email {
+  width: 400px;
+}
