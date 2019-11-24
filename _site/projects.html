@@ -14,35 +14,28 @@
 
     <style>
       p {font-size: 17px;}
-      .nav{ background-color: #333;}
     </style>
-
-    <script>
-      $(document).ready(function(){
-        // Add minus icon for collapse element which is open by default
-        $(".collapse.show").each(function(){
-          $(this).prev(".card-header").find(".fa").addClass("fa-minus").removeClass("fa-plus");
-        });
-        // Toggle plus minus icon on show hide of collapse element
-        $(".collapse").on('show.bs.collapse', function(){
-          $(this).prev(".card-header").find(".fa").removeClass("fa-plus").addClass("fa-minus");
-        }).on('hide.bs.collapse', function(){
-          $(this).prev(".card-header").find(".fa").removeClass("fa-minus").addClass("fa-plus");
-        });
-      });
-    </script>
   </head>
 
   <body>
-    <ul class="nav justify-content-center"> <!--navigation bar-->
+    <ul id="change" class="nav justify-content-center"> <!--navigation bar-->
       <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
       <li class="nav-item"><a class="nav-link" href="resume.html">Résumé</a></li>
       <li class="nav-item"><a class="nav-link active" href="projects.html">Projects</a></li>
       <li class="nav-item"><a class="nav-link" href="activities.html">Activities</a></li>
       <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
     </ul>
-    <div style="margin-top:50px;"></div>
-    <h1>Projects</h1>
+
+    <div style="position:relative;">
+      <section id="title">
+        <img id="header" src="../static/projects.jpg" alt="header">
+      </section>
+      <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);">
+        <section id="body">
+          <h1>PROJECTS</h1>
+        </section>
+      </div>
+    </div>
 
     <div class="projbox"> <!-- accordion dropdowns-->
       <div class="accordion" id="acc">
@@ -104,7 +97,7 @@
               of the SDLC. As scrum master, I managed and organized a team of 4, with the team
               following a Main/Feature branching strategy and using SVN as code management.
 
-              
+
 
               •	Developed an eCommerce android application using Java, SQLite, and Android Studio
               following Scrum implementation of Agile of the Software Development Life Cycle (SDLC)
@@ -367,6 +360,35 @@
       <p><i>"You only live once but if you do it right, once is enough."</i> - <b>Mae West</b></p>
       <p style="font-size:12px; margin-bottom:0;"><i> © 2018 by Winnie Lam </i>; Created with HTML and CSS</p>
     </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        // Add minus icon for collapse element which is open by default
+        $(".collapse.show").each(function(){
+          $(this).prev(".card-header").find(".fa").addClass("fa-minus").removeClass("fa-plus");
+        });
+        // Toggle plus minus icon on show hide of collapse element
+        $(".collapse").on('show.bs.collapse', function(){
+          $(this).prev(".card-header").find(".fa").removeClass("fa-plus").addClass("fa-minus");
+        }).on('hide.bs.collapse', function(){
+          $(this).prev(".card-header").find(".fa").removeClass("fa-minus").addClass("fa-plus");
+        });
+      });
+
+      /* navigation bar colour change */
+      var top1 = $('#title').offset().top;
+      var top2 = $('#body').offset().top;
+
+      $(document).scroll(function() {
+        var scrollPos = $(document).scrollTop();
+        if (scrollPos >= top1 && scrollPos < top2) {
+          $('#change').css('background-color', '');
+        } else if (scrollPos >= top2) {
+          $('#change').css('background-color', '#333');
+        }
+      });
+    </script>
 
   </body>
 </html>

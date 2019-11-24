@@ -20,14 +20,14 @@
     <script data-cfasync="false" type="text/javascript" src="../static/form-submission-handler.js"></script>
 
     <style>
-      .nav{ background-color: #333;}
+      h1 {font-size: 70px;}
     </style>
 
     <title>Winnie Lam</title>
   </head>
 
   <body>
-    <ul class="nav justify-content-center"> <!--navigation bar-->
+    <ul id="change" class="nav justify-content-center"> <!--navigation bar-->
       <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
       <li class="nav-item"><a class="nav-link" href="resume.html">Résumé</a></li>
       <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
@@ -35,12 +35,21 @@
       <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
     </ul>
 
-    <div style="margin-top:50px;"></div>
+    <div style="position:relative;">
+      <section id="title">
+        <img id="header" src="../static/contact.jpg" alt="header">
+      </section>
+      <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);">
+        <section id="body">
+          <h1>CONTACT</h1>
+        </section>
+      </div>
+    </div>
 
      <form class="gform pure-form pure-form-stacked content" method="POST" data-email="example@email.net"
      action="https://script.google.com/macros/s/AKfycbxUFQrDBMQlGLQrVM7jTtGZAdioPGXqptx3GSC6otYprH9owOg/exec">
 
-     <h1>Inquires? Send a Message!</h1>
+     <h2>Inquires? Send a Message!</h2>
 
      <div class="form-elements">
        <fieldset class="pure-group">
@@ -64,7 +73,8 @@
       </div>
 
       <div class="thankyou_message" style="display:none;"> <!-- thank you message -->
-        <h2><em>Thanks</em> for contacting us! We will get back to you soon!</h2>
+        <br>
+        <p>Thanks for contacting me! I will get back to you soon!</p>
       </div>
     </form>
 
@@ -80,6 +90,22 @@
       <p><i>"You only live once but if you do it right, once is enough."</i> - <b>Mae West</b></p>
       <p style="font-size:12px; margin-bottom:0;"><i> © 2018 by Winnie Lam </i>; Created with HTML and CSS</p>
     </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script>
+      /* navigation bar colour change */
+      var top1 = $('#title').offset().top;
+      var top2 = $('#body').offset().top;
+
+      $(document).scroll(function() {
+        var scrollPos = $(document).scrollTop();
+        if (scrollPos >= top1 && scrollPos < top2) {
+          $('#change').css('background-color', '');
+        } else if (scrollPos >= top2) {
+          $('#change').css('background-color', '#333');
+        }
+      });
+    </script>
 
   </body>
 </html>

@@ -11,25 +11,29 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
       integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
-    <style>
-      .nav{ background-color: #333;}
-    </style>
-
     <title>Winnie Lam</title>
 
   </head>
 
   <body>
-    <ul class="nav justify-content-center"> <!--navigation bar-->
+    <ul id="change" class="nav justify-content-center"> <!--navigation bar-->
       <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
       <li class="nav-item"><a class="nav-link" href="resume.html">Résumé</a></li>
       <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
       <li class="nav-item"><a class="nav-link active" href="activities.html">Activities</a></li>
       <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
     </ul>
-    <div style="margin-top:50px;"></div>
 
-    <h1>Activities</h1>
+    <div style="position:relative;">
+      <section id="title">
+        <img id="header" src="../static/activities.jpg" alt="header">
+      </section>
+      <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);">
+        <section id="body">
+          <h1>ACTIVITIES</h1>
+        </section>
+      </div>
+    </div>
 
 
     <!--event box template
@@ -253,6 +257,19 @@
 
     </div>
 
+    <footer>
+      <hr>
+      <h2 style="font-size:20px;text-shadow:0px 0px;">Winnie Lam</h2>
+      <p>winnieee.lam@mail.utoronto.ca</p>
+      <a href="https://www.linkedin.com/in/winnllam/"><i class="fab fa-linkedin icons"></i></a>
+      <a href="https://github.com/winnllam"><i class="fab fa-github icons"></i></a>
+      <a href="https://www.instagram.com/winnllam/"><i class="fab fa-instagram icons"></i></a>
+      <br><br>
+      <p><i>"You only live once but if you do it right, once is enough."</i> - <b>Mae West</b></p>
+      <p style="font-size:12px; margin-bottom:0;"><i> © 2018 by Winnie Lam </i>; Created with HTML and CSS</p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script> /*modal popups*/
       var btn = document.getElementsByClassName("expand");
       var modal;
@@ -270,19 +287,20 @@
           modal.style.display = "none";
         }
       }
-    </script>
 
-    <footer>
-      <hr>
-      <h2 style="font-size:20px;text-shadow:0px 0px;">Winnie Lam</h2>
-      <p>winnieee.lam@mail.utoronto.ca</p>
-      <a href="https://www.linkedin.com/in/winnllam/"><i class="fab fa-linkedin icons"></i></a>
-      <a href="https://github.com/winnllam"><i class="fab fa-github icons"></i></a>
-      <a href="https://www.instagram.com/winnllam/"><i class="fab fa-instagram icons"></i></a>
-      <br><br>
-      <p><i>"You only live once but if you do it right, once is enough."</i> - <b>Mae West</b></p>
-      <p style="font-size:12px; margin-bottom:0;"><i> © 2018 by Winnie Lam </i>; Created with HTML and CSS</p>
-    </footer>
+      /* navigation bar colour change */
+      var top1 = $('#title').offset().top;
+      var top2 = $('#body').offset().top;
+
+      $(document).scroll(function() {
+        var scrollPos = $(document).scrollTop();
+        if (scrollPos >= top1 && scrollPos < top2) {
+          $('#change').css('background-color', '');
+        } else if (scrollPos >= top2) {
+          $('#change').css('background-color', '#333');
+        }
+      });
+    </script>
 
   </body>
 </html>
