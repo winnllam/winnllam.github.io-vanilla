@@ -15,7 +15,7 @@ body.scheme-1 {
 
 body.scheme-1 #me {
   /* add image  */
-  content: url("../static/win1.jpg");
+  content: url("../static/self/win1.jpg");
 }
 
 body.scheme-2 {
@@ -23,7 +23,7 @@ body.scheme-2 {
 }
 
 body.scheme-2 #me {
-  content: url("../static/win2.jpg");
+  content: url("../static/self/win2.jpg");
 }
 
 body.scheme-3 {
@@ -31,7 +31,7 @@ body.scheme-3 {
 }
 
 body.scheme-3 #me {
-  content: url("../static/win3.jpg");
+  content: url("../static/self/win3.jpg");
 }
 
 body.scheme-4 {
@@ -39,7 +39,7 @@ body.scheme-4 {
 }
 
 body.scheme-4 #me {
-  content: url("../static/win4.jpg");
+  content: url("../static/self/win4.jpg");
 }
 
 body.scheme-5 {
@@ -47,7 +47,7 @@ body.scheme-5 {
 }
 
 body.scheme-5 #me {
-  content: url("../static/win5.jpg");
+  content: url("../static/self/win5.jpg");
 }
 
 /* TAGS */
