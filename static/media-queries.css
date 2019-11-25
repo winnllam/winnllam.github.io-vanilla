@@ -44,7 +44,7 @@
 
 @media screen and (max-width: 880px) {
 
-  /* resume */
+  /* RESUME */
   #skills {
     float: none;
     column-count: 2;
@@ -53,6 +53,11 @@
   #resume-sections {
     position: relative;
     margin-left: 50px;
+  }
+
+  /* ACTIVITIES */
+  #activity-cards {
+    column-count: 2;
   }
 }
 
@@ -104,7 +109,7 @@
 
   /*PROJECTS*/
   .projbox {
-    width: 490px;
+    width: 90%;
   }
 
   .pimages {
@@ -119,6 +124,14 @@
 
   #name, #email {
     width: 70%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+
+  /* ACTIVITIES */
+  #activity-cards {
+    column-count: 1;
   }
 }
 
