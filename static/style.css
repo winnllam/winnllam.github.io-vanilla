@@ -327,6 +327,22 @@ img {
   padding-left: 20px;
 }
 
+.skill-card {
+  margin: auto;
+}
+
+#skills {
+  margin-left: 8%;
+  margin-right: 5%;
+  float: left;
+}
+
+#resume-sections {
+  margin: 50px;
+  margin-left: 30%;
+  position: absolute;
+}
+
 /*OTHER*/
 #backdrop {
   height: 100%;

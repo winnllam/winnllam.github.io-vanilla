@@ -42,7 +42,21 @@
   }
 }
 
-@media screen and (max-width: 855px) {
+@media screen and (max-width: 880px) {
+
+  /* resume */
+  #skills {
+    float: none;
+    column-count: 2;
+  }
+
+  #resume-sections {
+    position: relative;
+    margin-left: 50px;
+  }
+}
+
+@media screen and (max-width: 780px) {
   .modal-content {
     width: 400px;
   }
