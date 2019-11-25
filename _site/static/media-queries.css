@@ -36,6 +36,12 @@
   }
 }
 
+@media screen and (max-height: 700px) {
+  #header {
+    height: 500px;
+  }
+}
+
 @media screen and (max-width: 855px) {
   .modal-content {
     width: 400px;
