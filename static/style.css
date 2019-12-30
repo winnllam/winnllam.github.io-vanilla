@@ -341,6 +341,11 @@ img {
   overflow: auto;
 }
 
+.white-bg {
+  background-color: white;
+  padding: 20px;
+}
+
 #me {
   width: 350px;
   border-radius: 50%;
