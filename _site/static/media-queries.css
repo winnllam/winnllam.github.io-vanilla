@@ -1,8 +1,8 @@
 /* width less than 980 px */
 @media screen and (max-width: 980px) {
 
-  /*ABOUT*/
-  #about {
+  /*SECTIONS*/
+  .content-wrap {
     width: 95%;
   }
 
@@ -87,7 +87,7 @@
     font-size: 20px;
   }
 
-  /*ABOUT*/
+  /*SECTIONS*/
   #info {
     width: 100%;
     float: none;
