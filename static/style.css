@@ -335,8 +335,14 @@ img {
 }
 
 /* SECTIONS */
-.content-wrap {
+#about {
   max-width: 980px;
+  margin: 35px auto;
+  overflow: auto;
+}
+
+.content-wrap {
+  max-width: 750px;
   margin: 35px auto;
   overflow: auto;
 }
