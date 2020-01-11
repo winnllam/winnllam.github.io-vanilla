@@ -50,17 +50,23 @@
   </div>
 
   <div class="tagbox">
-    <div class="taghead">
-      <h2>Language: </h2>
-    </div>
-    <div class="tagbody filters">
-      <button class="tags" id="clear" onclick="filter(this.id);">Clear</button>
-      <button class="tags" id="java" onclick="filter(this.id);">Java</button>
-      <button class="tags" id="htmlcss" onclick="filter(this.id);">HTML/CSS</button>
-      <button class="tags" id="js" onclick="filter(this.id);">JavaScript</button>
-      <button class="tags" id="py" onclick="filter(this.id);">Python</button>
-      <button class="tags" id="ruby" onclick="filter(this.id);">Ruby</button>
-    </div>
+    <h3 style="display:inline-block;">Language: </h3>
+    <button class="tags" id="java" onclick="filter(this.id);">Java</button>
+    <button class="tags" id="htmlcss" onclick="filter(this.id);">HTML/CSS</button>
+    <button class="tags" id="js" onclick="filter(this.id);">JavaScript</button>
+    <button class="tags" id="py" onclick="filter(this.id);">Python</button>
+    <button class="tags" id="ruby" onclick="filter(this.id);">Ruby</button>
+  </div>
+
+  <div class="tagbox">
+    <h3 style="display:inline-block;">Type: </h3>
+    <button class="tags" id="android" onclick="filter(this.id);">Android</button>
+    <button class="tags" id="webapp" onclick="filter(this.id);">Web App</button>
+    <button class="tags" id="website" onclick="filter(this.id);">Website</button>
+  </div>
+
+  <div class="tagbox">
+    <button class="tags" id="clear" onclick="filter(this.id);">View All</button>
   </div>
 
   <div class="projbox">
@@ -97,7 +103,7 @@
         </div>
         -->
 
-      <div class="card java">
+      <div class="card java android">
         <div class="card-header">
           <h2>
             <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSeven"><i class="fa fa-plus"></i>eCommerce Android Application</button>
@@ -146,7 +152,7 @@
         </div>
       </div>
 
-      <div class="card htmlcss ruby">
+      <div class="card htmlcss ruby webapp">
         <div class="card-header">
           <h2>
             <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix"><i class="fa fa-plus"></i>Evernote Replica</button>
@@ -196,7 +202,7 @@
       </div>
 
 
-      <div class="card htmlcss js">
+      <div class="card htmlcss js website">
         <div class="card-header">
           <h2>
             <button type="button" class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"><i class="fa fa-plus"></i>Web Page Designs</button>
@@ -228,7 +234,7 @@
       </div>
 
 
-      <div class="card htmlcss js">
+      <div class="card htmlcss js website">
         <div class="card-header">
           <h2>
             <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"><i class="fa fa-plus"></i>Website Creation</button>
@@ -263,7 +269,7 @@
       </div>
 
 
-      <div class="card htmlcss js py">
+      <div class="card htmlcss js py webapp">
         <div class="card-header">
           <h2>
             <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"><i class="fa fa-plus"></i>Student Connecter</button>
@@ -352,7 +358,7 @@
       </div>
 
 
-      <div class="card none">
+      <div class="card">
         <div class="card-header">
           <h2>
             <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive"><i class="fa fa-plus"></i>PC Building</button>
@@ -377,8 +383,6 @@
           </div>
         </div>
       </div>
-
-
     </div>
   </div>
 
