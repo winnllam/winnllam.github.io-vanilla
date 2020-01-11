@@ -21,6 +21,10 @@
     a:hover {
       text-decoration: none;
     }
+
+    .card {
+      display: block;
+    }
   </style>
 </head>
 
@@ -42,6 +46,19 @@
       <section id="body">
         <h1>PROJECTS</h1>
       </section>
+    </div>
+  </div>
+
+  <div class="tagbox">
+    <div class="taghead">
+      <h2>Language: </h2>
+    </div>
+    <div class="tagbody filters">
+      <button class="tags" id="clear" onclick="filter(this.id);">Clear</button>
+      <button class="tags" id="java" onclick="filter(this.id);">Java</button>
+      <button class="tags" id="htmlcss" onclick="filter(this.id);">HTML/CSS</button>
+      <button class="tags" id="js" onclick="filter(this.id);">JavaScript</button>
+      <button class="tags" id="py" onclick="filter(this.id);">Python</button>
     </div>
   </div>
 
@@ -79,7 +96,7 @@
         </div>
         -->
 
-      <div class="card">
+      <div class="card java">
         <div class="card-header">
           <h2>
             <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSeven"><i class="fa fa-plus"></i>eCommerce Android Application</button>
@@ -128,7 +145,7 @@
         </div>
       </div>
 
-      <div class="card">
+      <div class="card htmlcss ruby">
         <div class="card-header">
           <h2>
             <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix"><i class="fa fa-plus"></i>Evernote Replica</button>
@@ -178,7 +195,7 @@
       </div>
 
 
-      <div class="card">
+      <div class="card htmlcss js">
         <div class="card-header">
           <h2>
             <button type="button" class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"><i class="fa fa-plus"></i>Web Page Designs</button>
@@ -210,7 +227,7 @@
       </div>
 
 
-      <div class="card">
+      <div class="card htmlcss js">
         <div class="card-header">
           <h2>
             <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"><i class="fa fa-plus"></i>Website Creation</button>
@@ -245,7 +262,7 @@
       </div>
 
 
-      <div class="card">
+      <div class="card htmlcss js py">
         <div class="card-header">
           <h2>
             <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"><i class="fa fa-plus"></i>Student Connecter</button>
@@ -293,7 +310,7 @@
       </div>
 
 
-      <div class="card">
+      <div class="card java">
         <div class="card-header">
           <h2>
             <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour"><i class="fa fa-plus"></i>Airplane Shooter Game</button>
@@ -334,7 +351,7 @@
       </div>
 
 
-      <div class="card">
+      <div class="card none">
         <div class="card-header">
           <h2>
             <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive"><i class="fa fa-plus"></i>PC Building</button>
@@ -377,6 +394,7 @@
   </footer>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
   <script>
     $(document).ready(function() {
       // Add minus icon for collapse element which is open by default
@@ -403,6 +421,33 @@
         $('#change').css('background-color', '#333');
       }
     });
+
+    function filter(clickedId) {
+      var tags = ['java', 'htmlcss', 'js', 'py', 'ruby', 'none']
+
+      for (var tag = 0; tag < tags.length; tag++) {
+        var el = tags[tag];
+        if (clickedId == "clear") {
+          var x = document.getElementsByClassName("card");
+          for (var i = 0; i < x.length; i++) {
+            x[i].setAttribute("style", "display: block;");
+          }
+          break;
+        }
+
+        if (el != clickedId) {
+          var x = document.getElementsByClassName(el);
+          for (var i = 0; i < x.length; i++) {
+            x[i].setAttribute("style", "display: none;");
+          }
+        }
+      }
+      //incase of more than one tag
+      var x = document.getElementsByClassName(clickedId);
+      for (var i = 0; i < x.length; i++) {
+        x[i].setAttribute("style", "display: block;");
+      }
+    }
   </script>
 
 </body>

@@ -21,6 +21,10 @@
     a:hover {
       text-decoration: none;
     }
+
+    .card {
+      display: block;
+    }
   </style>
 </head>
 
@@ -45,6 +49,19 @@
     </div>
   </div>
 
+  <div class="tagbox">
+    <div class="taghead">
+      <h2>Language: </h2>
+    </div>
+    <div class="tagbody filters">
+      <button class="tags" id="clear" onclick="filter(this.id);">Clear</button>
+      <button class="tags" id="java" onclick="filter(this.id);">Java</button>
+      <button class="tags" id="htmlcss" onclick="filter(this.id);">HTML/CSS</button>
+      <button class="tags" id="js" onclick="filter(this.id);">JavaScript</button>
+      <button class="tags" id="py" onclick="filter(this.id);">Python</button>
+    </div>
+  </div>
+
   <div class="projbox">
     <!-- accordion dropdowns-->
     <div class="accordion" id="acc">
@@ -64,10 +81,14 @@
               </div>
               <h2>NAME</h2>
               <h3><b>Status: </b>Active (Dec 2018 - Present)</h3>
-              <p>deets</p>
+
+              <p><i>one sentence</i></p>
 
               <p><i>Languages:</i> lang</p>
               <p><i>Software/Tools:</i></p>
+
+              <p>deets</p>
+
               <p><i>Resources:</i> <a href=""></a></p>
               <a href="https://" target="_blank" <button class="linkproj">Link to Project</button></a>
             </div>
@@ -75,7 +96,7 @@
         </div>
         -->
 
-      <div class="card">
+      <div class="card java">
         <div class="card-header">
           <h2>
             <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSeven"><i class="fa fa-plus"></i>eCommerce Android Application</button>
@@ -92,6 +113,9 @@
             <h3><b>Status: </b>Active (Nov 2019 - Present)</h3>
 
             <p><i>An eCommerce mobile android application selling pineapples.</i></p>
+
+            <p><i>Languages:</i> Java, SQLite, XML</p>
+            <p><i>Software/Tools:</i> Android Studio, Eclipse IDE, subversion (SVN), Trello</p>
 
             <p> In the second year software design course, the final project created was an
               eCommerce Android application, using SQLite as the relational database. After
@@ -114,8 +138,6 @@
               project. We want to be able to add and enhance things that we were not able to do
               before due to time.</p>
 
-            <p><i>Languages:</i> Java, SQLite, XML</p>
-            <p><i>Software/Tools:</i> Android Studio, Eclipse IDE, subversion (SVN), Trello</p>
             <p><i>Resources:</i> N/A</p>
 
             <a href="https://github.com/winnllam/Pineapple" target="_blank" <button class="linkproj">Link to Project</button></a>
@@ -123,7 +145,7 @@
         </div>
       </div>
 
-      <div class="card">
+      <div class="card htmlcss ruby">
         <div class="card-header">
           <h2>
             <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix"><i class="fa fa-plus"></i>Evernote Replica</button>
@@ -141,6 +163,9 @@
             <h2>FileCabinet</h2>
             <h3><b>Status: </b>Active (Sept 2019)</h3>
             <p><i>A minimalist-themed Evernote replica web application.</i></p>
+            <p><i>Languages:</i> Ruby on Rails, Ruby, SASS, HAML, HTML, CSS</p>
+            <p><i>Software/Tools:</i> Atom Text Editor, Google Chrome, Heroku, Git, Gems</p>
+
             <p>Hosted on Heroku, I created a minimalist-themed web application
               that stores documents and notes, similar to Evernote. Using Rails web
               framework and HAML syntax to embed Ruby code, I was able to implement
@@ -157,8 +182,6 @@
               <br> • document download/export
               <br> • easier text styling</p>
 
-            <p><i>Languages:</i> Ruby on Rails, Ruby, SASS, HAML, HTML, CSS</p>
-            <p><i>Software/Tools:</i> Atom Text Editor, Google Chrome, Heroku, Git, Gems</p>
             <p><i>Resources:</i>
               <a href="https://www.udemy.com/course/8-beautiful-ruby-on-rails-apps-in-30-days/">Udemy</a>,
               <a href="https://www.heroku.com">Heroku</a>,
@@ -172,7 +195,7 @@
       </div>
 
 
-      <div class="card">
+      <div class="card htmlcss js">
         <div class="card-header">
           <h2>
             <button type="button" class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"><i class="fa fa-plus"></i>Web Page Designs</button>
@@ -188,12 +211,13 @@
             <h2>Just-Peachy</h2>
             <h3><b>Status: </b>Active (Dec 2018 - Present)</h3>
             <p><i>A website gallery to display different page designs with multi-purposes.</i></p>
+            <p><i>Languages:</i> HTML, CSS, JavaScript</p>
+            <p><i>Software/Tools:</i> Atom Text Editor, Git</p>
+
             <p>Displays web design and development skills to be able to attain the
               right aesthetics and correct function of a page's theme.</p>
             <p>Designs and selected images personally created.</p>
 
-            <p><i>Languages:</i> HTML, CSS, JavaScript</p>
-            <p><i>Software/Tools:</i> Atom Text Editor, Git</p>
             <p><i>Resources:</i>
               <a href="https://www.w3schools.com">w3schools</a>,
               <a href="https://developer.mozilla.org/en-US/">MDN Web Docs</a></p>
@@ -203,7 +227,7 @@
       </div>
 
 
-      <div class="card">
+      <div class="card htmlcss js">
         <div class="card-header">
           <h2>
             <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"><i class="fa fa-plus"></i>Website Creation</button>
@@ -218,14 +242,15 @@
             <h2>Winnllam</h2>
             <h3><b>Status: </b>Active (Sept 2018 - Present)</h3>
             <p><i>A personal profile website.</i></p>
+            <p><i>Languages:</i> HTML, CSS, JavaScript</p>
+            <p><i>Software/Tools:</i> Atom Text Editor, Git</p>
+
             <p>You're looking at it right now! This website was made from stratch
               by yours truly, to display all the things I have created or accomplished.
               This is a chance to show my competence in simple web creation and
               development. </p>
             <p>Formerly hosted on Google App Engine.</p>
 
-            <p><i>Languages:</i> HTML, CSS, JavaScript</p>
-            <p><i>Software/Tools:</i> Atom Text Editor, Git</p>
             <p><i>Resources:</i>
               <a href="https://github.com/dwyl/learn-to-send-email-via-google-script-html-no-server">
                 Send email with no server</a>,
@@ -237,7 +262,7 @@
       </div>
 
 
-      <div class="card">
+      <div class="card htmlcss js py">
         <div class="card-header">
           <h2>
             <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"><i class="fa fa-plus"></i>Student Connecter</button>
@@ -254,6 +279,9 @@
             <h3><b>Status: </b>Inactive (July 2018)</h3>
             <p><i>A web application that connects and display student locations
                 from (mutual) high school to (mutual) post secondary.</i></p>
+            <p><i>Languages:</i> HTML, CSS, Python, JavaScript</p>
+            <p><i>Software/Tools:</i> Atom Text Editor, Google Chrome, Google App Engine, Git</p>
+
             <p>Quad-Plus was created as a final project during my time with
               Google's Computer Science Summer Institute (CSSI). Partnered up with
               two others from the 30 students there, we created a web application
@@ -270,8 +298,6 @@
               login information, names of the institutions, and location (latitude
               and longitude).</p>
 
-            <p><i>Languages:</i> HTML, CSS, Python, JavaScript</p>
-            <p><i>Software/Tools:</i> Atom Text Editor, Google Chrome, Google App Engine, Git</p>
             <p><i>Resources:</i>
               <a href="https://developers.google.com/maps/documentation/javascript/tutorial">
                 Google Maps API</a>,
@@ -284,7 +310,7 @@
       </div>
 
 
-      <div class="card">
+      <div class="card java">
         <div class="card-header">
           <h2>
             <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour"><i class="fa fa-plus"></i>Airplane Shooter Game</button>
@@ -299,6 +325,9 @@
             <h2>Copyright Strike</h2>
             <h3><b>Status: </b>Inactive (April - June 2018)</h3>
             <p><i>A cartoon-looking airplane shooter game.</i></p>
+            <p><i>Languages:</i> Java</p>
+            <p><i>Software/Tools:</i> NetBeans IDE</p>
+
             <p>Copyright Strike was created as a final project in my grade 12
               computer science course. Partnered up with two other classmates
               in the class, we created an airplaine shooter game to fit the
@@ -315,8 +344,6 @@
               the items that need to be kept tracked of as mentioned above.</p>
             <p>This project resulted in an A grade, worth 30% of the total mark.</p>
 
-            <p><i>Languages:</i> Java</p>
-            <p><i>Software/Tools:</i> NetBeans IDE</p>
             <p><i>Resources:</i> N/A</p>
             <a href="https://github.com/winnllam/CopyrightStrike" target="_blank" <button class="linkproj">Link to Project</button></a>
           </div>
@@ -324,7 +351,7 @@
       </div>
 
 
-      <div class="card">
+      <div class="card none">
         <div class="card-header">
           <h2>
             <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive"><i class="fa fa-plus"></i>PC Building</button>
@@ -338,12 +365,13 @@
             <h2>PC Building</h2>
             <p>(May have some variation to parts)</p>
             <p><i>A personally assemble, fully functional and running PC.</i></p>
+            <p><i>Languages:</i> N/A</p>
+            <p><i>Software/Tools:</i> N/A</p>
+
             <p>This little project happened over winter break, and I was debating
               on buying a Windows Desktop. Someone suggested to just build one; it's
               cheaper and you'd get the experience.</p>
 
-            <p><i>Languages:</i> N/A</p>
-            <p><i>Software/Tools:</i> N/A</p>
             <p><i>Resources:</i> Internet and grade 11 computer science</p>
           </div>
         </div>
@@ -366,6 +394,7 @@
   </footer>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
   <script>
     $(document).ready(function() {
       // Add minus icon for collapse element which is open by default
@@ -392,6 +421,33 @@
         $('#change').css('background-color', '#333');
       }
     });
+
+    function filter(clickedId) {
+      var tags = ['java', 'htmlcss', 'js', 'py', 'ruby', 'none']
+
+      for (var tag = 0; tag < tags.length; tag++) {
+        var el = tags[tag];
+        if (clickedId == "clear") {
+          var x = document.getElementsByClassName("card");
+          for (var i = 0; i < x.length; i++) {
+            x[i].setAttribute("style", "display: block;");
+          }
+          break;
+        }
+
+        if (el != clickedId) {
+          var x = document.getElementsByClassName(el);
+          for (var i = 0; i < x.length; i++) {
+            x[i].setAttribute("style", "display: none;");
+          }
+        }
+      }
+      //incase of more than one tag
+      var x = document.getElementsByClassName(clickedId);
+      for (var i = 0; i < x.length; i++) {
+        x[i].setAttribute("style", "display: block;");
+      }
+    }
   </script>
 
 </body>
