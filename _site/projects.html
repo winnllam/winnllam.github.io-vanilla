@@ -59,6 +59,7 @@
       <button class="tags" id="htmlcss" onclick="filter(this.id);">HTML/CSS</button>
       <button class="tags" id="js" onclick="filter(this.id);">JavaScript</button>
       <button class="tags" id="py" onclick="filter(this.id);">Python</button>
+      <button class="tags" id="ruby" onclick="filter(this.id);">Ruby</button>
     </div>
   </div>
 
@@ -423,26 +424,19 @@
     });
 
     function filter(clickedId) {
-      var tags = ['java', 'htmlcss', 'js', 'py', 'ruby', 'none']
-
-      for (var tag = 0; tag < tags.length; tag++) {
-        var el = tags[tag];
-        if (clickedId == "clear") {
-          var x = document.getElementsByClassName("card");
-          for (var i = 0; i < x.length; i++) {
-            x[i].setAttribute("style", "display: block;");
-          }
-          break;
+      if (clickedId == "clear") { //cler tags
+        var x = document.getElementsByClassName("card");
+        for (var i = 0; i < x.length; i++) {
+          x[i].setAttribute("style", "display: block;");
         }
-
-        if (el != clickedId) {
-          var x = document.getElementsByClassName(el);
-          for (var i = 0; i < x.length; i++) {
-            x[i].setAttribute("style", "display: none;");
-          }
-        }
+        return;
       }
-      //incase of more than one tag
+      //hide all
+      var x = document.getElementsByClassName("card");
+      for (var i = 0; i < x.length; i++) {
+        x[i].setAttribute("style", "display: none;");
+      }
+      //display what's needed
       var x = document.getElementsByClassName(clickedId);
       for (var i = 0; i < x.length; i++) {
         x[i].setAttribute("style", "display: block;");
