@@ -51,6 +51,11 @@
         <h3>DATE</h3>
         <h3>Position: <i>POSITION</i></h3>
 
+        <div class="close-container">
+          <div class="leftright"></div>
+          <div class="rightleft"></div>
+        </div>
+
         <div class="position-desc">
           <div class="imgbox">
             <img class="imgleft" src="../static/events/">
@@ -79,6 +84,11 @@
         <h2>Women in Computer Science, Statistics, and Mathematics</h2>
         <h3>Fall 2019</h3>
         <h3>Position: <i>Mentor</i></h3>
+
+        <div class="close-container">
+          <div class="leftright"></div>
+          <div class="rightleft"></div>
+        </div>
 
         <div class="position-desc">
           <p>As a part of the first ever mentorship program with WiCSM, we aim
@@ -117,6 +127,11 @@
         <h2>Student Ambassador</h2>
         <h3>Oct 2018 - Present</h3>
         <h3>Position: <i>Tour Guide and Event Staff</i></h3>
+
+        <div class="close-container">
+          <div class="leftright"></div>
+          <div class="rightleft"></div>
+        </div>
 
         <div class="position-desc">
           <p><b>Events:</b></p>
@@ -164,6 +179,11 @@
         <h3>Mar 24, 2019</h3>
         <h3>Position: <i>Volunteer</i></h3>
 
+        <div class="close-container">
+          <div class="leftright"></div>
+          <div class="rightleft"></div>
+        </div>
+
         <div class="position-desc">
           <div class="imgbox">
             <img class="imgleft" src="../static/events/mathk.jpeg">
@@ -191,6 +211,11 @@
         <h2>Math in Motion... Girls in Gear</h2>
         <h3>Nov 24, 2018</h3>
         <h3>Position: <i>Volunteer</i></h3>
+
+        <div class="close-container">
+          <div class="leftright"></div>
+          <div class="rightleft"></div>
+        </div>
 
         <div class="position-desc">
           <div class="imgbox">
@@ -228,6 +253,11 @@
         <h3>July 8 - 28, 2018</h3>
         <h3>Position: <i>Student</i></h3>
 
+        <div class="close-container">
+          <div class="leftright"></div>
+          <div class="rightleft"></div>
+        </div>
+
         <div class="position-desc">
           <div class="imgbox">
             <img class="imgleft" src="../static/events/google_2.jpg">
@@ -262,6 +292,11 @@
         <h3>June - October 2017</h3>
         <h3>Position: <i>Information Booth Assistant and Volunteer</i></h3>
 
+        <div class="close-container">
+          <div class="leftright"></div>
+          <div class="rightleft"></div>
+        </div>
+
         <div class="position-desc">
           <p>Every Sunday, I went to the Farmers' Market to volunteer and assist
             to run the day smoothly. As an information booth assistant, I
@@ -277,7 +312,6 @@
         </div>
       </div>
     </div>
-
 
     <br></br>
 
@@ -305,6 +339,18 @@
 
     window.onclick = function(event) { // click outside modal
       if (event.target == modal) {
+        modal.style.display = "none";
+
+        const scrollY = document.body.style.top;
+        document.body.style.position = '';
+        document.body.style.top = '';
+        window.scrollTo(0, parseInt(scrollY || '0') * -1);
+      }
+    }
+
+    var close = document.getElementsByClassName("close-container"); //close btn
+    for (var i = 0; i < close.length; i++) {
+      close[i].onclick = function() {
         modal.style.display = "none";
 
         const scrollY = document.body.style.top;
