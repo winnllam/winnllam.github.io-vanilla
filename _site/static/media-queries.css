@@ -60,18 +60,10 @@
 }
 
 @media screen and (max-width: 780px) {
-  .imgbox {
-    overflow: auto;
-  }
 
-  .imgleft {
-    float: none;
-    width: 100%;
-  }
-
-  .imgright {
-    float: none;
-    width: 100%;
+  /* ACTIVITIES */
+  .modal-content {
+    height: 95%;
   }
 }
 
@@ -114,6 +106,21 @@
   .pimages {
     width: 100%;
     float: none;
+  }
+
+  /* ACTIVITIES */
+  .imgbox {
+    display: block;
+  }
+
+  .imgleft {
+    float: none;
+    width: 100%;
+  }
+
+  .imgright {
+    float: none;
+    width: 100%;
   }
 
   /* CONTACT */
