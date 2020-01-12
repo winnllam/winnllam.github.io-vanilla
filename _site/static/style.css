@@ -287,8 +287,7 @@ img {
   margin: auto;
   margin-bottom: 20px;
   padding: 25px;
-  border: 1.5px solid #000;
-  border-radius: 7px;
+  box-shadow: 5px 5px 10px grey;
   width: 900px;
   height: auto;
   overflow: scroll;
