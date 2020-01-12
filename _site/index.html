@@ -12,7 +12,6 @@
   <!--bootstrap links-->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
   <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
 
   <link rel="stylesheet" href="/static/style.css" type="text/css">
@@ -163,41 +162,16 @@
     </div>
   </section>
 
-  <footer>
-    <hr>
-    <h2 style="font-size:20px;text-shadow:0px 0px;">Winnie Lam</h2>
-    <p>winnieee.lam@mail.utoronto.ca</p>
-    <a href="https://www.linkedin.com/in/winnllam/" target="_blank"><i class="fab fa-linkedin icons"></i></a>
-    <a href="https://github.com/winnllam" target="_blank"><i class="fab fa-github icons"></i></a>
-    <a href="https://www.instagram.com/winnllam/" target="_blank"><i class="fab fa-instagram icons"></i></a>
-    <br><br>
-    <p><i>"You only live once but if you do it right, once is enough."</i> - <b>Mae West</b></p>
-    <p style="font-size:12px; margin-bottom:0;"><i> © 2018 by Winnie Lam </i>; Created with HTML and CSS</p>
-    <!--<p style="font-size:8px">Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a>
-        from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></p> -->
-  </footer>
-
+  <script language="javascript" type="text/javascript" src="footer.txt"></script>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="navi-scroll.js"></script>
   <script>
     /* change colour scheme */
     $(document).ready(function() {
       var listOfClasses = ["scheme-1", "scheme-2", "scheme-3", "scheme-4", "scheme-5"];
       var ranNum = Math.floor(Math.random() * listOfClasses.length);
       $("body").addClass(listOfClasses[ranNum]);
-    });
-
-    /* navigation bar colour change */
-    var top1 = $('#title').offset().top;
-    var top2 = $('#body').offset().top;
-
-    $(document).scroll(function() {
-      var scrollPos = $(document).scrollTop();
-      if (scrollPos >= top1 && scrollPos < top2) {
-        $('#change').css('background-color', '');
-      } else if (scrollPos >= top2) {
-        $('#change').css('background-color', '#333');
-      }
     });
   </script>
 </body>
