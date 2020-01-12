@@ -21,6 +21,10 @@
     a:hover {
       text-decoration: none;
     }
+
+    .card {
+      display: block;
+    }
   </style>
 </head>
 
@@ -43,6 +47,32 @@
         <h1>PROJECTS</h1>
       </section>
     </div>
+  </div>
+
+  <div class="tagbox">
+    <h3 style="display:inline-block;">Language: </h3>
+    <button class="tags" id="java" onclick="filter(this.id);">Java</button>
+    <button class="tags" id="htmlcss" onclick="filter(this.id);">HTML/CSS</button>
+    <button class="tags" id="js" onclick="filter(this.id);">JavaScript</button>
+    <button class="tags" id="py" onclick="filter(this.id);">Python</button>
+    <button class="tags" id="ruby" onclick="filter(this.id);">Ruby</button>
+  </div>
+
+  <div class="tagbox">
+    <h3 style="display:inline-block;">Type: </h3>
+    <button class="tags" id="android" onclick="filter(this.id);">Android App</button>
+    <button class="tags" id="webapp" onclick="filter(this.id);">Web App</button>
+    <button class="tags" id="website" onclick="filter(this.id);">Website</button>
+  </div>
+
+  <div class="tagbox">
+    <h3 style="display:inline-block;">Framework: </h3>
+    <button class="tags" id="androidsdk" onclick="filter(this.id);">Android SDK</button>
+    <button class="tags" id="rails" onclick="filter(this.id);">Ruby on Rails</button>
+  </div>
+
+  <div class="tagbox">
+    <button class="tags" id="clear" onclick="filter(this.id);">View All</button>
   </div>
 
   <div class="projbox">
@@ -79,7 +109,7 @@
         </div>
         -->
 
-      <div class="card">
+      <div class="card java android androidsdk">
         <div class="card-header">
           <h2>
             <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSeven"><i class="fa fa-plus"></i>eCommerce Android Application</button>
@@ -128,7 +158,7 @@
         </div>
       </div>
 
-      <div class="card">
+      <div class="card htmlcss ruby rails webapp">
         <div class="card-header">
           <h2>
             <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix"><i class="fa fa-plus"></i>Evernote Replica</button>
@@ -178,7 +208,7 @@
       </div>
 
 
-      <div class="card">
+      <div class="card htmlcss js website">
         <div class="card-header">
           <h2>
             <button type="button" class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"><i class="fa fa-plus"></i>Web Page Designs</button>
@@ -210,7 +240,7 @@
       </div>
 
 
-      <div class="card">
+      <div class="card htmlcss js website">
         <div class="card-header">
           <h2>
             <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"><i class="fa fa-plus"></i>Website Creation</button>
@@ -245,7 +275,7 @@
       </div>
 
 
-      <div class="card">
+      <div class="card htmlcss js py webapp">
         <div class="card-header">
           <h2>
             <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"><i class="fa fa-plus"></i>Student Connecter</button>
@@ -293,7 +323,7 @@
       </div>
 
 
-      <div class="card">
+      <div class="card java">
         <div class="card-header">
           <h2>
             <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour"><i class="fa fa-plus"></i>Airplane Shooter Game</button>
@@ -359,8 +389,6 @@
           </div>
         </div>
       </div>
-
-
     </div>
   </div>
 
@@ -377,6 +405,7 @@
   </footer>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
   <script>
     $(document).ready(function() {
       // Add minus icon for collapse element which is open by default
@@ -403,6 +432,26 @@
         $('#change').css('background-color', '#333');
       }
     });
+
+    function filter(clickedId) {
+      if (clickedId == "clear") { //cler tags
+        var x = document.getElementsByClassName("card");
+        for (var i = 0; i < x.length; i++) {
+          x[i].setAttribute("style", "display: block;");
+        }
+        return;
+      }
+      //hide all
+      var x = document.getElementsByClassName("card");
+      for (var i = 0; i < x.length; i++) {
+        x[i].setAttribute("style", "display: none;");
+      }
+      //display what's needed
+      var x = document.getElementsByClassName(clickedId);
+      for (var i = 0; i < x.length; i++) {
+        x[i].setAttribute("style", "display: block;");
+      }
+    }
   </script>
 
 </body>

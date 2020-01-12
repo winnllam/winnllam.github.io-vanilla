@@ -164,6 +164,26 @@ img {
 }
 
 /*PROJECT BOXES*/
+.tagbox {
+  text-align: center;
+  margin: 10px auto;
+}
+
+.tags {
+  background-color: white;
+  color: black;
+  border: 2px solid grey;
+  border-radius: 7px;
+  padding: 5px 10px;
+  margin: 5px;
+  font-size: 15px;
+}
+
+.tags:hover {
+  background-color: grey;
+  color: white;
+}
+
 .projbox {
   width: 900px;
   margin: 60px auto;
