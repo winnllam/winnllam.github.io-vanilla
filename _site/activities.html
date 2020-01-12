@@ -277,6 +277,7 @@
   </footer>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="navi-footer.js"></script>
   <script>
     /*modal popups*/
     var btn = document.getElementsByClassName("expand");
@@ -295,19 +296,6 @@
         modal.style.display = "none";
       }
     }
-
-    /* navigation bar colour change */
-    var top1 = $('#title').offset().top;
-    var top2 = $('#body').offset().top;
-
-    $(document).scroll(function() {
-      var scrollPos = $(document).scrollTop();
-      if (scrollPos >= top1 && scrollPos < top2) {
-        $('#change').css('background-color', '');
-      } else if (scrollPos >= top2) {
-        $('#change').css('background-color', '#333');
-      }
-    });
   </script>
 
 </body>

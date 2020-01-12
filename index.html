@@ -12,7 +12,6 @@
   <!--bootstrap links-->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
   <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
 
   <link rel="stylesheet" href="/static/style.css" type="text/css">
@@ -179,25 +178,13 @@
 
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="navi-footer.js"></script>
   <script>
     /* change colour scheme */
     $(document).ready(function() {
       var listOfClasses = ["scheme-1", "scheme-2", "scheme-3", "scheme-4", "scheme-5"];
       var ranNum = Math.floor(Math.random() * listOfClasses.length);
       $("body").addClass(listOfClasses[ranNum]);
-    });
-
-    /* navigation bar colour change */
-    var top1 = $('#title').offset().top;
-    var top2 = $('#body').offset().top;
-
-    $(document).scroll(function() {
-      var scrollPos = $(document).scrollTop();
-      if (scrollPos >= top1 && scrollPos < top2) {
-        $('#change').css('background-color', '');
-      } else if (scrollPos >= top2) {
-        $('#change').css('background-color', '#333');
-      }
     });
   </script>
 </body>
