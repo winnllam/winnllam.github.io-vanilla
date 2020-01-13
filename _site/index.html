@@ -79,18 +79,16 @@
       <p>I have also volunteered for various STEM related roles for students
         interested in pursuing the field in their future.</p>
       <p>I am also currently a Developer Co-op at RBC Royal Bank for Winter 2020.</p>
-
+      <br>
     </div>
   </div>
 
-  <div class="content-wrap" id="ov" style="margin-bottom:0; opacity:1;">
+  <div class="content-wrap" id="resume">
     <center>
       <br>
       <h2>Quick Overview...</h2>
     </center>
-  </div>
 
-  <div class="content-wrap" id="resume">
     <img class="bubble-icons" src="../static/icons/resume.png">
     <div class="box">
       <h2 class="white">Résumé</h2>
@@ -192,11 +190,6 @@
       var section2 = $('#about').offset().top + $('#about').outerHeight(true);
       if (scrollBottom > section2) {
         $('#about').addClass("animated").addClass("fadeInUp");
-      }
-
-      var section = $('#ov').offset().top + $('#ov').outerHeight(true);
-      if (scrollBottom > section) {
-        $('#ov').addClass("animated").addClass("fadeInUp");
       }
 
       var section3 = $('#resume').offset().top + $('#resume').outerHeight(true);

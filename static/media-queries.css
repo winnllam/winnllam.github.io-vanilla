@@ -20,6 +20,11 @@
     margin-bottom: 10px;
   }
 
+  .box {
+    width: 75%;
+  }
+
+  /*PROJECTS*/
   .projbox {
     width: 675px;
   }
@@ -93,6 +98,21 @@
     margin-bottom: 20px;
   }
 
+  .box {
+    float: none;
+    width: 95%;
+  }
+
+  .box:before {
+    visibility: hidden;
+  }
+
+  .bubble-icons {
+    display: block;
+    float: none;
+    margin: auto;
+  }
+
   /* RESUME */
   #resume-sections {
     margin: 5%;
@@ -101,11 +121,6 @@
   /*PROJECTS*/
   .projbox {
     width: 90%;
-  }
-
-  .pimages {
-    width: 100%;
-    float: none;
   }
 
   /* ACTIVITIES */
