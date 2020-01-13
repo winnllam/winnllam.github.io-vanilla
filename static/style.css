@@ -53,12 +53,17 @@ body.scheme-5 #me {
 /* TAGS */
 @font-face {
   font-family: Comfortaa;
-  src: url('Comfortaa/Comfortaa.ttf');
+  src: url('fonts/Comfortaa/Comfortaa.ttf');
 }
 
 @font-face {
   font-family: OpenSansCondensed;
-  src: url('Open_Sans_Condensed/OpenSansCondensed-Light.ttf');
+  src: url('fonts/Open_Sans_Condensed/OpenSansCondensed-Light.ttf');
+}
+
+@font-face {
+  font-family: Staatliches;
+  src: url('fonts/Staatliches/Staatliches-Regular.ttf');
 }
 
 h1 {
@@ -70,7 +75,7 @@ h1 {
 }
 
 h2 {
-  font-family: Comfortaa;
+  font-family: Staatliches;
   font-size: 40px;
   color: #2b2b2b;
   text-shadow: 2px 0px 0px rgba(0, 0, 0, 0.075), 7px 3px 0px rgba(0, 0, 0, 0.05);
@@ -88,6 +93,14 @@ h4 {
   font-size: 135px;
   color: white;
   text-align: center;
+}
+
+h5 {
+  font-family: Comfortaa;
+  font-size: 40px;
+  color: #2b2b2b;
+  text-shadow: 2px 0px 0px rgba(0, 0, 0, 0.075), 7px 3px 0px rgba(0, 0, 0, 0.05);
+  margin: 0 10px;
 }
 
 p {
@@ -416,11 +429,6 @@ img {
   opacity: 0;
 }
 
-.white-bg {
-  background-color: white;
-  padding: 20px;
-}
-
 #me {
   width: 350px;
   border-radius: 50%;
@@ -430,4 +438,29 @@ img {
 #info {
   width: 600px;
   float: right;
+}
+
+/* OVERVIEW */
+.box {
+  width: 700px;
+  color: white;
+  background: #82ccbb;
+  position: relative;
+  padding: 30px;
+  margin: 35px auto;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+.box:before {
+  content: "";
+  position: absolute;
+  right: 100%;
+  top: 26px;
+  width: 0;
+  height: 0;
+  border-top: 13px solid transparent;
+  border-right: 26px solid #82ccbb;
+  border-bottom: 13px solid transparent;
 }

@@ -24,7 +24,11 @@
 
   <style>
     p {
-      margin: 0;
+      margin: 5px;
+    }
+
+    .white {
+      color: white;
     }
   </style>
 </head>
@@ -60,35 +64,35 @@
   </div>
   <br>
 
-  <section>
-    <div class="content-wrap" id="about">
-      <img id="me" src="../static/self/win1.jpg" class="img-thumbnail img-fluid float-left" alt="Winnie" onContextMenu="return false;">
+  <div class="content-wrap" id="about">
+    <img id="me" src="../static/self/win1.jpg" class="img-thumbnail img-fluid float-left" alt="Winnie" onContextMenu="return false;">
 
-      <div id="info" style="padding:2%; margin:10px;">
-        <h2 style="font-size:45px;">Hi, it's Winnie!</h2>
-        <br>
-        <p>I am currently attending <b>University of Toronto</b>, program
-          for <i>Specialist Computer Science - Software Engineering Stream</i>. My interest
-          in computer science started in grade 10. Now, I have 4 years of
-          experience and knowledge of multiple programming languages under my belt. </p>
-        <p>Currently, I am a teaching assistant for a first year computer science course,
-          a student ambassador campus tour guide, and a WiCSM mentor.</p>
-        <p>I have also volunteered for various STEM related roles for students
-          interested in pursuing the field in their future.</p>
-        <p>Developer at RBC Royal Bank for Winter 2020.</p>
+    <div id="info" style="padding:2%; margin:10px;">
+      <h2 style="font-size:45px;">Hi, it's Winnie!</h2>
+      <br>
+      <p>I am currently attending <b>University of Toronto</b>, program
+        for <i>Specialist Computer Science - Software Engineering Stream</i>. My interest
+        in computer science started in grade 10. Now, I have 4 years of
+        experience and knowledge of multiple programming languages under my belt. </p>
+      <p>Currently, I am a teaching assistant for a first year computer science course,
+        a student ambassador campus tour guide, and a WiCSM mentor.</p>
+      <p>I have also volunteered for various STEM related roles for students
+        interested in pursuing the field in their future.</p>
+      <p>I am also currently a Developer Co-op at RBC Royal Bank for Winter 2020.</p>
 
-      </div>
     </div>
-  </section>
-
-  <div class="content-wrap" style="margin-bottom:0;">
-    <br>
-    <p>Quick Overview...</p>
   </div>
 
-  <section class="white-bg">
-    <div class="content-wrap" id="resume">
-      <h2>Résumé</h2>
+  <div class="content-wrap" id="ov" style="margin-bottom:0; opacity:1;">
+    <center>
+      <br>
+      <h2>Quick Overview...</h2>
+    </center>
+  </div>
+
+  <div class="content-wrap" id="resume">
+    <div class="box">
+      <h2 class="white">Résumé</h2>
       <br>
       <p><b>Developer Co-op</b>, RBC Royal Bank</p>
       <p><i>January 2020 - Present</i></p>
@@ -101,11 +105,11 @@
       <br>
       <p><a href="https://drive.google.com/open?id=1FO4ty81THO92dGWc4gBToEf70l2ZW55Y" target="_blank">Resume Link</a></p>
     </div>
-  </section>
+  </div>
 
-  <section>
-    <div class="content-wrap" id="projects">
-      <h2>Projects</h2>
+  <div class="content-wrap" id="projects">
+    <div class="box">
+      <h2 class="white">Projects</h2>
       <br>
       <p><b>Presently:</b></p>
       <p><i>Pineapple</i>, an eCommerce Android Application</p>
@@ -135,13 +139,12 @@
           creativity, aesthetics, and intentions to showcase possible creative ideas
           for a webpage</li>
       </ul>
-
     </div>
-  </section>
+  </div>
 
-  <section class="white-bg">
-    <div class="content-wrap" id="activity">
-      <h2>Activities</h2>
+  <div class="content-wrap" id="activity">
+    <div class="box">
+      <h2 class="white">Activities</h2>
       <br>
       <p><b>Presently:</b></p>
       <p><i>WiCSM Mentor</i></p>
@@ -160,9 +163,8 @@
           or more people for 45-minute tours and clarified inquires to assist in
           making post-secondary decisions </li>
       </ul>
-
     </div>
-  </section>
+  </div>
 
   <script language="javascript" type="text/javascript" src="footer.txt"></script>
 
@@ -187,6 +189,11 @@
       var section2 = $('#about').offset().top + $('#about').outerHeight(true);
       if (scrollBottom > section2) {
         $('#about').addClass("animated").addClass("fadeInUp");
+      }
+
+      var section = $('#ov').offset().top + $('#ov').outerHeight(true);
+      if (scrollBottom > section) {
+        $('#ov').addClass("animated").addClass("fadeInUp");
       }
 
       var section3 = $('#resume').offset().top + $('#resume').outerHeight(true);
