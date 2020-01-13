@@ -473,4 +473,9 @@ img {
   border-radius: 100%;
   border: 10px solid #82ccbb;
   float: left;
+  transition: .5s;
+}
+
+.bubble-icons:hover {
+  width: 137px;
 }
