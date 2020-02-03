@@ -177,9 +177,15 @@ img {
 }
 
 /*PROJECT BOXES*/
+#tagframe {
+  text-align: center;
+  margin: 0 5%;
+}
+
 .tagbox {
   text-align: center;
-  margin: 0 auto;
+  margin: 0 10px;
+  display: inline-block;
 }
 
 .tags {

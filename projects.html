@@ -49,37 +49,46 @@
     </div>
   </div>
   <br>
-  <div class="tagbox">
-    <h3 style="display:inline-block;">Language: </h3>
-    <button class="tags" id="java" onclick="filter(this.id);">Java</button>
-    <button class="tags" id="htmlcss" onclick="filter(this.id);">HTML/CSS</button>
-    <button class="tags" id="js" onclick="filter(this.id);">JavaScript</button>
-    <button class="tags" id="py" onclick="filter(this.id);">Python</button>
-    <button class="tags" id="ruby" onclick="filter(this.id);">Ruby</button>
-  </div>
 
-  <div class="tagbox">
-    <h3 style="display:inline-block;">Type: </h3>
-    <button class="tags" id="android" onclick="filter(this.id);">Android App</button>
-    <button class="tags" id="webapp" onclick="filter(this.id);">Web App</button>
-    <button class="tags" id="website" onclick="filter(this.id);">Website</button>
-  </div>
+  <div id="tagframe">
+    <div class="tagbox">
+      <h3 style="display:inline-block;">Language: </h3>
+      <button class="tags" id="java" onclick="filter(this.id);">Java</button>
+      <button class="tags" id="htmlcss" onclick="filter(this.id);">HTML/CSS</button>
+      <button class="tags" id="js" onclick="filter(this.id);">JavaScript</button>
+      <button class="tags" id="py" onclick="filter(this.id);">Python</button>
+      <button class="tags" id="ruby" onclick="filter(this.id);">Ruby</button>
+    </div>
 
-  <div class="tagbox">
-    <h3 style="display:inline-block;">Framework: </h3>
-    <button class="tags" id="androidsdk" onclick="filter(this.id);">Android SDK</button>
-    <button class="tags" id="rails" onclick="filter(this.id);">Ruby on Rails</button>
-  </div>
+    <div class="tagbox">
+      <h3 style="display:inline-block;">Type: </h3>
+      <button class="tags" id="android" onclick="filter(this.id);">Android App</button>
+      <button class="tags" id="webapp" onclick="filter(this.id);">Web App</button>
+      <button class="tags" id="website" onclick="filter(this.id);">Website</button>
+    </div>
 
-  <div class="tagbox">
-    <h3 style="display:inline-block;">Grouping: </h3>
-    <button class="tags" id="team" onclick="filter(this.id);">Team</button>
-    <button class="tags" id="partner" onclick="filter(this.id);">Partner</button>
-    <button class="tags" id="solo" onclick="filter(this.id);">Solo</button>
-  </div>
+    <div class="tagbox">
+      <h3 style="display:inline-block;">Framework: </h3>
+      <button class="tags" id="androidsdk" onclick="filter(this.id);">Android SDK</button>
+      <button class="tags" id="rails" onclick="filter(this.id);">Ruby on Rails</button>
+    </div>
 
-  <div class="tagbox">
-    <button class="tags" id="clear" onclick="filter(this.id);">View All</button>
+    <div class="tagbox">
+      <h3 style="display:inline-block;">Grouping: </h3>
+      <button class="tags" id="team" onclick="filter(this.id);">Team</button>
+      <button class="tags" id="partner" onclick="filter(this.id);">Partner</button>
+      <button class="tags" id="solo" onclick="filter(this.id);">Solo</button>
+    </div>
+
+    <div class="tagbox">
+      <h3 style="display:inline-block;">Actvitiy: </h3>
+      <button class="tags" id="active" onclick="filter(this.id);">Active</button>
+      <button class="tags" id="inactive" onclick="filter(this.id);">Inactive</button>
+    </div>
+
+    <div class="tagbox" style="display: block;">
+      <button class="tags" id="clear" onclick="filter(this.id);">View All</button>
+    </div>
   </div>
 
   <div class="projbox">
@@ -116,7 +125,7 @@
         </div>
         -->
 
-      <div class="card java android androidsdk team">
+      <div class="card java android androidsdk team active">
         <div class="card-header">
           <h5>
             <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSeven"><i class="fa fa-plus"></i>eCommerce Android Application</button>
@@ -165,7 +174,7 @@
         </div>
       </div>
 
-      <div class="card htmlcss ruby rails webapp solo">
+      <div class="card htmlcss ruby rails webapp solo inactive">
         <div class="card-header">
           <h5>
             <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix"><i class="fa fa-plus"></i>Evernote Replica</button>
@@ -181,7 +190,7 @@
               <img class="pimages" src="../static/projects/fc5.png" alt="filecabinet5">
             </div>
             <h2>FileCabinet</h2>
-            <h3><b>Status: </b>Active (Sept 2019)</h3>
+            <h3><b>Status: </b>Inactive (Sept 2019)</h3>
             <p><i>A minimalist-themed Evernote replica web application.</i></p>
             <p><i>Languages:</i> Ruby on Rails, Ruby, SASS, HAML, HTML, CSS</p>
             <p><i>Software/Tools:</i> Atom Text Editor, Google Chrome, Heroku, Git, Gems</p>
@@ -215,7 +224,7 @@
       </div>
 
 
-      <div class="card htmlcss js website solo">
+      <div class="card htmlcss js website solo active">
         <div class="card-header">
           <h5>
             <button type="button" class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"><i class="fa fa-plus"></i>Web Page Designs</button>
@@ -247,7 +256,7 @@
       </div>
 
 
-      <div class="card htmlcss js website solo">
+      <div class="card htmlcss js website solo active">
         <div class="card-header">
           <h5>
             <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"><i class="fa fa-plus"></i>Website Creation</button>
@@ -282,7 +291,7 @@
       </div>
 
 
-      <div class="card htmlcss js py webapp team">
+      <div class="card htmlcss js py webapp team inactive">
         <div class="card-header">
           <h5>
             <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"><i class="fa fa-plus"></i>Student Connecter</button>
@@ -330,7 +339,7 @@
       </div>
 
 
-      <div class="card java team">
+      <div class="card java team inactive">
         <div class="card-header">
           <h5>
             <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour"><i class="fa fa-plus"></i>Airplane Shooter Game</button>
@@ -371,7 +380,7 @@
       </div>
 
 
-      <div class="card solo">
+      <div class="card solo inactive">
         <div class="card-header">
           <h5>
             <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive"><i class="fa fa-plus"></i>PC Building</button>
