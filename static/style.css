@@ -50,6 +50,14 @@ body.scheme-5 #me {
   content: url("../static/self/win5.jpg");
 }
 
+body.scheme-6 {
+  background-color: #F5F5F5;
+}
+
+body.scheme-6 #me {
+  content: url("../static/self/win6.jpg");
+}
+
 /* TAGS */
 @font-face {
   font-family: Comfortaa;
@@ -234,7 +242,6 @@ img {
 }
 
 .linkproj {
-  // button
   background-color: white;
   color: black;
   border: 2px solid #A07276;
@@ -451,7 +458,7 @@ img {
 .box {
   width: 700px;
   color: white;
-  background: #A9A9A9;
+  background: rgb(185, 185, 185);
   position: relative;
   padding: 30px;
   margin: 35px auto;
