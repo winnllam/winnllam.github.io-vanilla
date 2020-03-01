@@ -58,6 +58,22 @@ body.scheme-6 #me {
   content: url("../static/self/win6.jpg");
 }
 
+body.scheme-7 {
+  background-color: #F5F5F5;
+}
+
+body.scheme-7 #me {
+  content: url("../static/self/win7.jpg");
+}
+
+body.scheme-8 {
+  background-color: #F5F5F5;
+}
+
+body.scheme-8 #me {
+  content: url("../static/self/win8.jpg");
+}
+
 /* TAGS */
 @font-face {
   font-family: Comfortaa;
