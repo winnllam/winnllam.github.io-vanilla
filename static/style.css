@@ -499,8 +499,6 @@ img {
 .bubble-icons {
   width: 125px;
   margin-right: 0;
-  border-radius: 100%;
-  border: 10px solid #82ccbb;
   float: left;
   transition: .5s;
 }
