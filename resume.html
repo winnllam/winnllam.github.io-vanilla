@@ -1,219 +1,290 @@
 <html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--bootstrap links-->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
 
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!--bootstrap links-->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/static/style.css" />
+    <link rel="stylesheet" href="/static/media-queries.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    />
 
-  <link rel="stylesheet" href="/static/style.css">
-  <link rel="stylesheet" href="/static/media-queries.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <title>Winnie Lam</title>
 
-  <title>Winnie Lam</title>
+    <style>
+      @font-face {
+        font-family: Raleway;
+        src: url("static/Raleway/Raleway-Regular.ttf");
+      }
 
-  <style>
-    @font-face {
-      font-family: Raleway;
-      src: url('static/Raleway/Raleway-Regular.ttf');
-    }
+      h2 {
+        color: #4caf50;
+        font-family: Raleway;
+        font-size: 30px;
+        text-shadow: 0px 0px 0px rgba(0, 0, 0, 0), 0px 0px 0px rgba(0, 0, 0, 0);
+      }
 
-    h2 {
-      color: #4CAF50;
-      font-family: Raleway;
-      font-size: 30px;
-      text-shadow: 0px 0px 0px rgba(0, 0, 0, 0), 0px 0px 0px rgba(0, 0, 0, 0);
-    }
+      p {
+        margin: 0;
+      }
 
-    p {
-      margin: 0;
-    }
+      .card {
+        margin-top: 20px;
+        width: 200px;
+      }
 
-    .card {
-      margin-top: 20px;
-      width: 200px;
-    }
+      .card-text {
+        font-size: 15px;
+      }
+    </style>
+  </head>
 
-    .card-text {
-      font-size: 15px;
-    }
-  </style>
+  <body>
+    <ul id="change" class="nav justify-content-center">
+      <!--navigation bar-->
+      <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+      <li class="nav-item">
+        <a class="nav-link active" href="resume.html">Résumé</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="projects.html">Projects</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="activities.html">Activities</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contact.html">Contact</a>
+      </li>
+    </ul>
 
-</head>
-
-<body>
-  <ul id="change" class="nav justify-content-center">
-    <!--navigation bar-->
-    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-    <li class="nav-item"><a class="nav-link active" href="resume.html">Résumé</a></li>
-    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-    <li class="nav-item"><a class="nav-link" href="activities.html">Activities</a></li>
-    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-  </ul>
-
-  <div style="position:relative;">
-    <section id="title">
-      <img id="header" src="../static/headers/resume.jpg" alt="header">
-    </section>
-    <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);">
-      <section id="body">
-        <h1>RÉSUMÉ</h1>
+    <div style="position: relative;">
+      <section id="title">
+        <img id="header" src="../static/headers/resume.jpg" alt="header" />
       </section>
-    </div>
-  </div>
-
-  <div id="resume-sections">
-    <h2 style="display:inline;">OBJECTIVE</h2>
-    <div class="resume">
-      <p>As an aspiring computer science student, I wish to use my skill set to
-        help others. Although not exposed to the industry in depth, I believe that
-        my passions, skills, and abilities can help make a difference.</p>
-    </div>
-
-    <h2 style="display:inline;">EDUCATION</h2>
-    <div class="resume">
-      <p>University of Toronto (2018 - Present)</p>
-      <p><b>Honours Bachelor of Science</b></p>
-      <p>Specialist (Co-operative) Program in Computer Science -
-        Software Engineering Stream, 3rd Year</p>
-      <p><i>cGPA:</i> 3.51/4.0</p>
-      <br>
-      <p><i>Awards: </i></p>
-      <ul>
-        <li>Dean's List (October 2019)</li>
-        <li>University of Toronto Entrance Scholarship (2018)</li>
-      </ul>
-    </div>
-
-    <h2 style="display:inline;">EXPERIENCE</h2>
-    <div class="resume">
-      <p><b>Developer Co-op</b>, RBC Royal Bank</p>
-      <p><i>January 2020 - Present</i></p>
-      <ul>
-        <li>RBC Innovation Team, as apart of the Emerging Technology Lab's development team</li>
-        <li>Achieved higher level in skills in using JavaScript, TypeScript, Dialogflow, and React</li>
-        <li>Created diagnostic UI and testing UI for a chat bot</li>
-        <li>Researched the implementation of a middleware service to Slack and Cisco
-          WebEx Teams bots</li>
-      </ul>
-      <br>
-
-      <p><b>Computer Science Teaching Assistant</b>, University of Toronto Scarborough</p>
-      <p><i>September 2019 - December 2019</i></p>
-      <ul>
-        <li>Clarified student questions about first year computer science and Python concepts</li>
-        <li>Distributed handouts in a lecture size of 150</li>
-        <li>Attended weekly meetings with the teaching team to keep consistency</li>
-        <li>Hosted office hours for students to seek one-on-one help outside of class</li>
-      </ul>
-      <br>
-
-      <p><b>Student</b>, Google's Computer Science Summer Institute</p>
-      <p><i>July 2018</i></p>
-      <ul>
-        <li>Obtained practical programming experience among Google engineers using HTML, CSS,
-          JavaScript, and Python to develop and host a web application on Google App Engine</li>
-      </ul>
-    </div>
-
-    <h2 style="display:inline;">EXTRA-CURRICULARS</h2>
-    <div class="resume">
-      <ul>
-        <li>WiCSM Mentor (Women in Computer Science, Statistics, and Mathematics)</li>
-        <li>UTSC Student Ambassador (Tour Guide and Event Staff)</li>
-        <li>Volunteer for Math Kangaroo Contest</li>
-        <li>Volunteer for Math in Motion... Girls in Gear</li>
-        <li>Vice-President of RPG Club</li>
-        <li>Information Booth Assistant for Leslieville Farmers Market</li>
-        <li>Multi-role volunteer for Toronto Outdoor Art Exhibition</li>
-        <li>Office Assistant for Sir Alexander Mackenzie Sr. P. S.</li>
-      </ul>
-    </div>
-
-    <p style="margin:20px;"><i>More details about projects and extra-curriculars can be seen in the projects
-        tab and activities tab!</i></p>
-    <p style="margin:20px;"><a href="https://drive.google.com/open?id=1FO4ty81THO92dGWc4gBToEf70l2ZW55Y" target="_blank">Resume Link</a></p>
-  </div>
-  <br><br><br>
-
-  <div id="skills">
-    <div class="card skill-card">
-      <div class="card-header">Languages</div>
-      <div class="card-body">
-        <p class="card-text">Java
-          <br> HTML/CSS
-          <br> Python
-          <br> JavaScript
-          <br> TypeScript
-          <br> C
-          <br> Shell Scripting
-          <br> SQL
-          <br> Ruby
-        </p>
+      <div
+        style="
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        "
+      >
+        <section id="body">
+          <h1>RÉSUMÉ</h1>
+        </section>
       </div>
     </div>
 
-    <div class="card skill-card">
-      <div class="card-header">Frameworks</div>
-      <div class="card-body">
-        <p class="card-text">Bootstrap
-          <br> React
-          <br> Ruby on Rails
-        </p>
+    <div id="resume-format">
+      <div id="resume-sections">
+        <h2 style="display: inline;">OBJECTIVE</h2>
+        <div class="resume">
+          <p>
+            As an aspiring computer science student, I wish to use my skill set
+            to help others. Although not exposed to the industry in depth, I
+            believe that my passions, skills, and abilities can help make a
+            difference.
+          </p>
+        </div>
+
+        <h2 style="display: inline;">EDUCATION</h2>
+        <div class="resume">
+          <p>University of Toronto (2018 - Present)</p>
+          <p><b>Honours Bachelor of Science</b></p>
+          <p>
+            Specialist (Co-operative) Program in Computer Science - Software
+            Engineering Stream, 3rd Year
+          </p>
+          <p><i>cGPA:</i> 3.51/4.0</p>
+          <br />
+          <p><i>Awards: </i></p>
+          <ul>
+            <li>Dean's List (October 2019)</li>
+            <li>University of Toronto Entrance Scholarship (2018)</li>
+          </ul>
+        </div>
+
+        <h2 style="display: inline;">EXPERIENCE</h2>
+        <div class="resume">
+          <p><b>Front-End Developer</b>, LIVE Competition</p>
+          <p><i>April 2020 - Present</i></p>
+          <br />
+
+          <p><b>Developer Co-op</b>, RBC Royal Bank</p>
+          <p><i>January 2020 - Present</i></p>
+          <ul>
+            <li>
+              RBC Innovation Team, as apart of the Emerging Technology Lab's
+              development team
+            </li>
+            <li>
+              Achieved higher level in skills in using JavaScript, TypeScript,
+              Dialogflow, React, Vue.js, Elasticsearch and Kibana
+            </li>
+            <li>
+              Created diagnostic UI and feedback UI for a Dialogflow chat bot to
+              collect real time user feedback for future consumption
+            </li>
+            <li>
+              Adapted InnerSource code to utilize a dashboard to display
+              collected conversations in real time through Elasticsearch
+            </li>
+          </ul>
+          <br />
+
+          <p>
+            <b>Computer Science Teaching Assistant</b>, University of Toronto
+            Scarborough
+          </p>
+          <p><i>September 2019 - December 2019</i></p>
+          <ul>
+            <li>
+              Clarified student questions about first year computer science and
+              Python concepts
+            </li>
+            <li>Distributed handouts in a lecture size of 150</li>
+            <li>
+              Attended weekly meetings with the teaching team to keep
+              consistency
+            </li>
+            <li>
+              Hosted office hours for students to seek one-on-one help outside
+              of class
+            </li>
+          </ul>
+          <br />
+
+          <p><b>Student</b>, Google's Computer Science Summer Institute</p>
+          <p><i>July 2018</i></p>
+          <ul>
+            <li>
+              Obtained practical programming experience among Google engineers
+              using HTML, CSS, JavaScript, and Python to develop and host a web
+              application on Google App Engine
+            </li>
+          </ul>
+        </div>
+
+        <h2 style="display: inline;">PROJECTS AND EXTRA-CURRICULARS</h2>
+        <div class="resume">
+          <p>
+            <i
+              >More details about projects and extra-curriculars can be seen in
+              the projects tab and activities tab!</i
+            >
+          </p>
+          <p>
+            <a
+              href="https://drive.google.com/open?id=1FO4ty81THO92dGWc4gBToEf70l2ZW55Y"
+              target="_blank"
+              >Resume Link</a
+            >
+          </p>
+        </div>
+      </div>
+      <br />
+
+      <div id="skills">
+        <div class="card skill-card">
+          <div class="card-header">Languages</div>
+          <div class="card-body">
+            <p class="card-text">
+              Java <br />
+              HTML/CSS <br />
+              Python <br />
+              JavaScript <br />
+              TypeScript <br />
+              C <br />
+              Shell Scripting <br />
+              SQL <br />
+              Ruby
+            </p>
+          </div>
+        </div>
+
+        <div class="card skill-card">
+          <div class="card-header">Frameworks</div>
+          <div class="card-body">
+            <p class="card-text">
+              Bootstrap <br />
+              React <br />
+              Ruby on Rails
+            </p>
+          </div>
+        </div>
+
+        <div class="card skill-card">
+          <div class="card-header">Databases</div>
+          <div class="card-body">
+            <p class="card-text">
+              MySQL <br />
+              SQLite
+            </p>
+          </div>
+        </div>
+
+        <div class="card skill-card">
+          <div class="card-header">Code Management</div>
+          <div class="card-body">
+            <p class="card-text">
+              Git/Github <br />
+              subversion (SVN)
+            </p>
+          </div>
+        </div>
+
+        <div class="card skill-card">
+          <div class="card-header">Software/Tools</div>
+          <div class="card-body">
+            <p class="card-text">
+              Microsoft Office <br />
+              Atom Text Editor <br />
+              Eclipse IDE <br />
+              Visual Studio Code <br />
+              Android Studio <br />
+              Jira <br />
+              npm/yarn <br />
+              jQuery
+            </p>
+          </div>
+        </div>
+
+        <div class="card skill-card">
+          <div class="card-header">Soft Skills</div>
+          <div class="card-body">
+            <p class="card-text">
+              Communication <br />
+              Collaboration <br />
+              Leadership <br />
+              Problem Solving <br />
+              Organization <br />
+              Mentorship
+            </p>
+          </div>
+        </div>
       </div>
     </div>
 
-    <div class="card skill-card">
-      <div class="card-header">Databases</div>
-      <div class="card-body">
-        <p class="card-text">MySQL
-          <br> SQLite
-        </p>
-      </div>
-    </div>
-
-    <div class="card skill-card">
-      <div class="card-header">Code Management</div>
-      <div class="card-body">
-        <p class="card-text">Git/Github
-          <br> subversion (SVN)
-        </p>
-      </div>
-    </div>
-
-    <div class="card skill-card">
-      <div class="card-header">Software/Tools</div>
-      <div class="card-body">
-        <p class="card-text">Microsoft Office
-          <br> Atom Text Editor
-          <br> Eclipse IDE
-          <br> Visual Studio Code
-          <br> Android Studio
-          <br> Jira
-          <br> npm/yarn
-          <br> jQuery
-        </p>
-      </div>
-    </div>
-
-    <div class="card skill-card">
-      <div class="card-header">Soft Skills</div>
-      <div class="card-body">
-        <p class="card-text">Communication
-          <br> Collaboration
-          <br> Leadership
-          <br> Problem Solving
-          <br> Organization
-          <br> Mentorship
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <script language="javascript" type="text/javascript" src="footer.txt"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-  <script src="navi-scroll.js"></script>
-
-</body>
-
+    <script
+      language="javascript"
+      type="text/javascript"
+      src="footer.txt"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="navi-scroll.js"></script>
+  </body>
 </html>

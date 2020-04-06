@@ -1,6 +1,27 @@
-/* width less than 980 px */
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 1200px) {
+  /*RESUME*/
+  #skills {
+    column-count: 3;
+  }
 
+  #resume-sections {
+    width: 100%;
+  }
+
+  /* ACTIVITIES */
+  .evtbox {
+    flex: 0 1 45%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  /* ACTIVITIES */
+  .evtbox {
+    flex: 0 1 100%;
+  }
+}
+
+@media screen and (max-width: 980px) {
   /*SECTIONS*/
   .content-wrap {
     width: 95%;
@@ -29,7 +50,12 @@
     width: 675px;
   }
 
-  .pimages {
+  .card-desc {
+    width: 100%;
+    float: none;
+  }
+
+  .projimg {
     width: 100%;
     float: none;
   }
@@ -39,33 +65,7 @@
   }
 }
 
-@media screen and (max-height: 700px) {
-  #header {
-    height: 500px;
-  }
-}
-
-@media screen and (max-width: 880px) {
-
-  /* RESUME */
-  #skills {
-    float: none;
-    column-count: 2;
-  }
-
-  #resume-sections {
-    position: relative;
-    margin-left: 50px;
-  }
-
-  /* ACTIVITIES */
-  #activity-cards {
-    column-count: 2;
-  }
-}
-
 @media screen and (max-width: 780px) {
-
   /* ACTIVITIES */
   .modal-content {
     height: 95%;
@@ -74,6 +74,9 @@
 
 /* width less than 650 px;*/
 @media screen and (max-width: 700px) {
+  #header {
+    height: 500px;
+  }
 
   /*TITLE*/
   h4 {
@@ -118,6 +121,11 @@
     margin: 5%;
   }
 
+  /* RESUME */
+  #skills {
+    column-count: 2;
+  }
+
   /*PROJECTS*/
   .projbox {
     width: 90%;
@@ -143,21 +151,16 @@
     width: 95%;
   }
 
-  #name, #email {
+  #name,
+  #email {
     width: 70%;
   }
 }
 
 @media screen and (max-width: 550px) {
-
   /* RESUME */
   #skills {
     margin: auto;
-  }
-
-  /* ACTIVITIES */
-  #activity-cards {
-    column-count: 1;
   }
 }
 
