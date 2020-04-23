@@ -389,11 +389,11 @@ img {
 }
 
 .position-desc {
-  overflow: scroll;
+  overflow: auto;
 }
 
 .imgbox {
-  overflow: scroll;
+  overflow: auto;
 }
 
 .imgleft {
